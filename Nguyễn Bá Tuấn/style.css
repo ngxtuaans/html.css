@@ -1,0 +1,306 @@
+@charset "utf-8";
+body {
+    width: 100%;
+    margin: auto;
+    padding: 0%;
+    background-color: rgb(252, 246, 246);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+#header {
+    width: 100%;
+    background-color: whitesmoke;
+    position: relative;
+    z-index: 100;
+    max-width: 100%;
+    margin: auto;
+}
+
+.logo {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.menu img {
+    margin-top: 15px;
+    margin-left: 0px;
+    margin-right: 10px;
+}
+
+.menu input {
+    float: right;
+    padding: 6px;
+    border: 8px;
+    margin-top: 15px;
+    margin-right: 0px;
+    font-size: 15px;
+    color: #717171;
+}
+
+.menu {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.menu a {
+    float: right;
+    display: block;
+    padding: 20px 14px;
+    color: rgb(29, 24, 24);
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: 'Arial', serif;
+    margin-right: 18px;
+    margin-top: auto;
+}
+
+.menu a:hover {
+    color: rgba(135, 135, 205, 0.728);
+}
+
+.theloai a {
+    font-family: "Arial", serif;
+    font-size: 13px;
+    margin: 20px;
+    color: white;
+    margin-top: 10px;
+    padding: 20px 14px;
+    text-decoration: none;
+}
+
+.color-change {
+    color: #fffafa;
+    transition: color 0.3s;
+}
+
+.color-change:hover {
+    color: #eaefbeac;
+}
+
+.theloai {
+    background-color: #000000;
+}
+
+.slogan img {
+    margin: 20px;
+}
+
+.slogan a {
+    font-family: "Arial", serif;
+    font-size: 30px;
+    margin: 20px;
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+    padding: 20px 14px;
+    text-decoration: none;
+    float: right;
+}
+
+.slogan b {
+    float: right;
+}
+
+main {
+    width: 100%;
+}
+
+.sanpham {
+    background-color: white;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.column {
+    width: 17%;
+    height: 350px;
+    padding: 8px 10px;
+    float: left;
+    background-color: whitesmoke;
+    border-radius: 35px;
+    margin-right: 14px;
+    margin-left: 12px;
+    margin-top: 5px;
+}
+
+.column p {
+    font-family: 'Arial', serif;
+}
+
+.column b {
+    color: black;
+    font-size: 15px;
+    font-family: 'Arial', serif;
+}
+
+.column em {
+    text-decoration: line-through;
+    font-family: 'Arial', serif;
+}
+
+.column span {
+    background-color: red;
+    color: aliceblue;
+    width: 16px;
+    height: 10px;
+    text-align: center;
+    margin: 5px;
+    font-family: 'Arial', serif;
+}
+
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 2.5s;
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.mySlidesfade image {
+    size: 100%;
+}
+
+.slogan h3 {
+    font-family: 'Arial', serif;
+    font-size: 18px;
+    color: #666;
+}
+
+.slogan p {
+    font-family: 'Arial', serif;
+    font-size: 15px;
+    color: #666;
+    margin-top: 2px;
+}
+
+.slogan a {
+    font-family: 'Arial', serif;
+    color: #666;
+}
+
+.slogan {
+    margin: auto;
+    background-color: whitesmoke;
+}
+
+.image-container {
+    display: flex;
+}
+
+.image-item {
+    flex: 1;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.image-item img {
+    width: 100%;
+    display: block;
+    margin-bottom: 5px;
+    border-radius: 35px;
+    border: 2px solid wheat;
+}
+
+.image-item p {
+    font-family: 'Arial', serif;
+    margin: 0;
+}
+
+.image-item {
+    overflow: hidden;
+    width: 200px;
+    height: auto;
+}
+
+.image-item img {
+    transition: transform 0.3s ease;
+}
+
+.image-item:hover img {
+    transform: scale(1.1);
+}
+
+ul {
+    font-family: 'Arial', serif;
+    font-size: 23px;
+}
+
+footer {
+    background-color: whitesmoke;
+    color: #717171;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    padding: 20px;
+    flex: 1;
+    font-family: 'Arial', serif;
+}
+
+.footer-section h3 {
+    color: #717171;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: 'Arial', serif;
+}
+
+.footer-bottom {
+    background-color: red;
+    color: white;
+    padding: 10px 0;
+    font-family: 'Arial', serif;
+}

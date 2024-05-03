@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+body {
+    width: 100%;
+    margin: auto;
+    padding: 0px;
+    background-color: wheat;
+}
+
+header {
+    width: 100%;
+    background-color: antiquewhite;
+}
+
+.logo {
+    background-color: black;
+}
+
+.logo {
+    width: 100%;
+    overflow: hidden;
+    position: static;
+}
+
+.logo a {
+    float: right;
+    display: block;
+    padding: 20px 14px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.logo a:hover {
+    border: solid #F78585;
+    background-color: black;
+}
+
+main {
+    width: 100%;
+}
+
+.sanpham {
+    background-color: wheat;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.column {
+    width: 17%;
+    padding: 8px 10px;
+    float: left;
+    background-color: whitesmoke;
+    border-radius: 35px;
+    margin-right: 16px;
+}
+
+.column b {
+    color: black;
+    font-size: 15px;
+}
+
+.column em {
+    text-decoration: line-through;
+}
+
+.column span {
+    background-color: red;
+    color: aliceblue;
+    width: 16px;
+    height: 10px;
+    text-align: center;
+    margin: 5px;
+}

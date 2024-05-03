@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+.main-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-menu ul li {
+    display: inline-block;
+    position: relative;
+    /* Để sub-menu có thể được hiển thị chính xác */
+}
+
+.main-menu ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+.sub-menu {
+    display: none;
+    /* Ẩn sub-menu ban đầu */
+    position: absolute;
+    top: 100%;
+    /* Hiển thị sub-menu bên dưới */
+    left: 0;
+    background-color: #fff;
+    padding: 10px 0;
+    min-width: 120px;
+    z-index: 1;
+    /* Đảm bảo sub-menu hiển thị trên top */
+}
+
+.main-menu ul li:hover .sub-menu {
+    display: block;
+    /* Hiển thị sub-menu khi hover */
+}
+
+#chat-box {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #ccc;
+    overflow-y: scroll;
+    padding: 10px;
+}
+
+#chat-input {
+    width: calc(100% - 70px);
+    float: left;
+}
+
+#send-button {
+    width: 60px;
+    float: right;
+}
+
+#chat-input-container {
+    display: none;
+}
